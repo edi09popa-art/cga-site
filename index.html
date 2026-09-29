@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CGA Cargo Go Ahead · Intră în flota noastră cu duba ta</title>
+<meta name="description" content="CGA este casă de expediții din București. Căutăm parteneri cu dube, de la Caddy de 2 europaleți până la prelate de 8, pentru curse prin toată Europa. Dispecerat 24/7.">
+<meta name="theme-color" content="#0A1732">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232A4B8F'/%3E%3Cpath d='M22.6 8.4c.9-.5 2 .1 2 1.1v13c0 1-1.1 1.6-2 1.1L11.5 17.1c-.9-.5-.9-1.7 0-2.2z' fill='%23FCB62E'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CGA Cargo Go Ahead">
+<meta property="og:title" content="CGA Cargo Go Ahead · Intră în flota CGA">
+<meta property="og:description" content="Căutăm parteneri cu dube, de la Caddy de 2 europaleți până la prelate de 8. Noi găsim cursele, tu conduci.">
+<!-- DEPLOY STEP: replace both URLs below with the live absolute address before zipping -->
+<meta property="og:url" content="https://edi09popa-art.github.io/cga-site/">
+<meta property="og:image" content="https://edi09popa-art.github.io/cga-site/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="nav.skip">Sari la conținut</a>
+
+<header class="nav dark">
+  <div class="wrap nav-in">
+    <a class="logo" href="#main" aria-label="CGA Cargo Go Ahead">
+      <img class="logo-d" src="assets/img/cga-logo-light.png" alt="" width="82" height="34">
+      <img class="logo-l" src="assets/img/cga-logo.png" alt="" width="82" height="34">
+    </a>
+    <nav aria-label="Principal" data-i18n-aria="aria.nav">
+      <ul class="nav-links">
+        <li><a href="#cum" data-i18n="nav.1">Cum lucrăm</a></li>
+        <li><a href="#flota" data-i18n="nav.2">Flota</a></li>
+        <li><a href="#echipa" data-i18n="nav.3">Echipa</a></li>
+        <li><a href="#intrebari" data-i18n="nav.4">Întrebări</a></li>
+        <li><a href="#contact" data-i18n="nav.5">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="lang" role="group" aria-label="Limbă" data-i18n-aria="aria.lang">
+      <button type="button" data-lang="ro" aria-pressed="true">RO</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="de" aria-pressed="false">DE</button>
+    </div>
+    <a class="btn btn-accent btn-sm nav-cta" href="https://cgatrans.com/partnership/carriers_form" data-i18n="nav.cta">Devino partener</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section id="hero" class="hero" aria-label="Introducere" data-i18n-aria="aria.hero">
+    <div class="stage">
+      <div class="fallback-map" aria-hidden="true"></div>
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="bands">
+        <div class="band b1 fx-drift" data-a="0" data-b="0.2">
+          <p class="big split" data-fx="drift" data-i18n="h.b1a">Ai o dubă. Noi avem cursele.</p>
+          <p class="small" data-i18n="h.b1b">CGA e casă de expediții din București. Noi găsim marfa, tu o duci la destinație.</p>
+        </div>
+        <div class="band b2 fx-snap" data-a="0.25" data-b="0.47" data-ramp="0.05">
+          <p class="big split" data-fx="snap" data-i18n="h.b2a">Nu ești singur pe drum.</p>
+          <p class="small" data-i18n="h.b2b">Dispeceratul nostru e cu tine 24/7, de la încărcare la livrare.</p>
+        </div>
+        <div class="band b3 fx-scatter" data-a="0.5" data-b="0.72" data-ramp="0.05">
+          <p class="big split" data-fx="scatter" data-i18n="h.b3a">Curse prin toată Europa.</p>
+          <p class="small" data-i18n="h.b3b">Clienții noștri trimit marfă în 18 țări.</p>
+        </div>
+        <div class="band b4 fx-rise settle" data-a="0.76" data-b="1" data-ramp="0.06">
+          <p class="kicker chip done-chip"><svg class="tick-s" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5"/></svg><span data-i18n="h.kick">Livrat · București → Paris</span></p>
+          <h1 class="split" data-fx="rise" data-i18n="h.h1">Intră în flota CGA.</h1>
+          <p class="sub" data-i18n="h.sub">Căutăm parteneri cu dube, de la Caddy de 2 europaleți până la prelate de 8. Noi găsim cursele, tu conduci.</p>
+          <div class="cta-row">
+            <a class="btn btn-accent" href="https://cgatrans.com/partnership/carriers_form" data-i18n="h.cta">Devino partener</a>
+            <a class="btn btn-ghost-n" href="tel:+40799752124" data-i18n="h.call">Sună: +40 799 752 124</a>
+          </div>
+        </div>
+      </div>
+      <div class="hud chip" aria-hidden="true"><span class="hud-l">BUC → PAR</span><span class="hud-n">0 km</span></div>
+      <div class="cue" aria-hidden="true"><span data-i18n="h.cue">Derulează</span><svg viewBox="0 0 16 16"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </section>
+
+  <div class="below">
+    <div class="env" aria-hidden="true"><i></i></div>
+
+    <section id="cifre" class="sec stats">
+      <div class="wrap stats-grid">
+        <div class="stats-copy">
+          <p class="kicker rv"><span data-i18n="st.k">În cifre</span></p>
+          <h2 class="rv" style="--i:1" data-i18n="st.h">Din 2016, pe drumurile Europei.</h2>
+          <ul class="nums">
+            <li class="num rv" style="--i:2"><span class="n" data-count="18323050">18.323.050</span><span class="l" data-i18n="st.1l">kilometri parcurși</span></li>
+            <li class="num rv" style="--i:3"><span class="n" data-count="14872" data-suffix="+">14.872+</span><span class="l" data-i18n="st.2l">transporturi livrate</span></li>
+            <li class="num rv" style="--i:4"><span class="n" data-count="0.1" data-dec="1" data-suffix="%">0,1%</span><span class="l" data-i18n="st.3l">reclamații</span></li>
+            <li class="num rv" style="--i:5"><span class="n" data-count="18">18</span><span class="l" data-i18n="st.4l">țări în care mergem des</span></li>
+          </ul>
+        </div>
+        <figure class="stats-photo rv" style="--i:2">
+          <img src="assets/img/dube-cga.jpg" width="736" height="403" loading="lazy" decoding="async" alt="Dube albe cu sigla CGA, parcate una lângă alta." data-i18n-alt="st.alt">
+          <figcaption class="chip-l"><span class="arrow-mk" aria-hidden="true"></span><span data-i18n="st.cap">Dube CGA, gata de drum.</span></figcaption>
+        </figure>
+      </div>
+      <div class="wrap">
+        <ul class="countries rv" style="--i:3">
+          <li data-cc="RO">România</li><li data-cc="BG">Bulgaria</li><li data-cc="HU">Ungaria</li><li data-cc="CZ">Cehia</li><li data-cc="SK">Slovacia</li><li data-cc="PL">Polonia</li><li data-cc="DE">Germania</li><li data-cc="AT">Austria</li><li data-cc="BE">Belgia</li><li data-cc="FR">Franța</li><li data-cc="ES">Spania</li><li data-cc="PT">Portugalia</li><li data-cc="IT">Italia</li><li data-cc="GB">Marea Britanie</li><li data-cc="SE">Suedia</li><li data-cc="NO">Norvegia</li><li data-cc="NL">Olanda</li><li data-cc="DK">Danemarca</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cum" class="sec model">
+      <div class="wrap">
+        <div class="model-head">
+          <div>
+            <p class="kicker rv"><span data-i18n="md.k">Cum lucrăm</span></p>
+            <h2 class="rv" style="--i:1" data-i18n="md.h">Noi găsim marfa. Tu o duci.</h2>
+          </div>
+          <p class="lede rv" style="--i:2" data-i18n="md.p">CGA e casă de expediții. Lucrăm cu parteneri care intră în flota noastră cu dubele lor.</p>
+        </div>
+        <ol class="flow3">
+          <li class="flow-card rv" style="--i:1">
+            <span class="flow-n" aria-hidden="true">01</span>
+            <svg class="flow-ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M8 16l16-8 16 8v18l-16 8-16-8z"/><path pathLength="1" d="M8 16l16 8 16-8M24 24v18"/><path pathLength="1" d="M16 12l16 8v6"/></svg>
+            <h3 data-i18n="md.1t">Clienții ne dau marfa</h3>
+            <p data-i18n="md.1d">Firme din toată Europa ne încredințează transporturile lor, multe dintre ele urgente.</p>
+          </li>
+          <li class="flow-card mid rv" style="--i:2">
+            <span class="flow-n" aria-hidden="true">02</span>
+            <svg class="flow-ico" viewBox="0 0 48 48" aria-hidden="true"><circle pathLength="1" cx="24" cy="24" r="17"/><path class="fill-a" d="M31.5 17.7c1-.6 2.2.1 2.2 1.2v10.2c0 1.1-1.2 1.8-2.2 1.2l-9.4-5.1c-1-.6-1-2 0-2.5z"/></svg>
+            <h3 data-i18n="md.2t">Noi o dăm flotei</h3>
+            <p data-i18n="md.2d">Dispecerii noștri potrivesc fiecare cursă cu o dubă din flota CGA.</p>
+          </li>
+          <li class="flow-card rv" style="--i:3">
+            <span class="flow-n" aria-hidden="true">03</span>
+            <svg class="flow-ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M4 33V15.5c0-1.4 1.1-2.5 2.5-2.5H30v20"/><path pathLength="1" d="M30 19h7.2c.9 0 1.7.5 2.1 1.2l4 6.8c.5.8.7 1.6.7 2.5V33h-3.5"/><path pathLength="1" d="M4 33h6.5M18 33h13.5"/><circle pathLength="1" cx="14" cy="34.5" r="3.5"/><circle pathLength="1" cx="37" cy="34.5" r="3.5"/></svg>
+            <h3 data-i18n="md.3t">Tu o livrezi</h3>
+            <p data-i18n="md.3d">Încarci, conduci, livrezi. Comenzile și documentele le vezi în portal.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="flota" class="sec planner">
+      <div class="wrap">
+        <div class="pl-head">
+          <p class="kicker rv"><span data-i18n="fl.k">Flota</span></p>
+          <h2 class="rv" style="--i:1" data-i18n="fl.h">Ce dubă ai?</h2>
+          <p class="lede rv" style="--i:2" data-i18n="fl.p">Alege duba ta și vezi cum intră în flota CGA.</p>
+        </div>
+        <div class="pl-stage rv" style="--i:3">
+          <div class="pl-vis">
+            <svg id="truck" viewBox="190 14 320 122" aria-hidden="true"><g class="veh cur"><rect class="wheel" x="271" y="37.5" width="24" height="7" rx="2"></rect><rect class="wheel" x="271" y="105.5" width="24" height="7" rx="2"></rect><rect class="wheel" x="417" y="37.5" width="24" height="7" rx="2"></rect><rect class="wheel" x="417" y="105.5" width="24" height="7" rx="2"></rect><rect class="body" x="249" y="41.5" width="140" height="67" rx="8"></rect><rect class="slot on" x="344" y="46.5" width="40" height="26" rx="3" style="--d: 0;"></rect><rect class="slot on" x="344" y="77.5" width="40" height="26" rx="3" style="--d: 1;"></rect><rect class="slot on" x="299" y="46.5" width="40" height="26" rx="3" style="--d: 2;"></rect><rect class="slot on" x="299" y="77.5" width="40" height="26" rx="3" style="--d: 3;"></rect><rect class="slot on" x="254" y="46.5" width="40" height="26" rx="3" style="--d: 4;"></rect><rect class="slot" x="254" y="77.5" width="40" height="26" rx="3"></rect><rect class="mirror" x="423" y="34.5" width="6" height="9" rx="2"></rect><rect class="mirror" x="423" y="106.5" width="6" height="9" rx="2"></rect><rect class="cab" x="393" y="41.5" width="58" height="67" rx="12"></rect><rect class="glass" x="435" y="48.5" width="8" height="53" rx="3"></rect><path class="mk" d="M409.2 65L426.2 75L409.2 85Z"></path></g></svg>
+            <div class="pl-road" aria-hidden="true"><i></i></div>
+          </div>
+          <div class="pl-bottom">
+            <div class="pl-controls">
+              <p class="pl-label" id="van-label" data-i18n="fl.label">Câți europaleți încap în duba ta?</p>
+              <div class="seg seg-5" role="radiogroup" aria-labelledby="van-label">
+                <button type="button" role="radio" aria-checked="false" data-van="2" aria-label="2 europaleți" data-i18n-aria="fl.c2">2</button>
+                <button type="button" role="radio" aria-checked="true" data-van="5" aria-label="5 europaleți" data-i18n-aria="fl.c5">5</button>
+                <button type="button" role="radio" aria-checked="false" data-van="6" aria-label="6 europaleți" data-i18n-aria="fl.c6">6</button>
+                <button type="button" role="radio" aria-checked="false" data-van="7" aria-label="7 europaleți" data-i18n-aria="fl.c7">7</button>
+                <button type="button" role="radio" aria-checked="false" data-van="8" aria-label="8 europaleți" data-i18n-aria="fl.c8">8</button>
+              </div>
+              <p class="pl-fine" data-i18n="fl.fine">Acestea sunt dubele pe care le primim în flotă.</p>
+            </div>
+            <div class="pl-result" id="pl-result" aria-live="polite">
+              <p class="pl-kind" id="pl-kind">Dubă Sprinter</p>
+              <p class="pl-spec" id="pl-spec">5 europaleți · până la 1.250 kg</p>
+              <p class="pl-desc" id="pl-desc">Duba ta se potrivește în flota CGA.</p>
+              <a class="btn btn-accent" id="pl-cta" href="https://cgatrans.com/partnership/carriers_form" data-i18n="fl.cta">Înscrie-te cu duba ta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficii" class="sec benefits">
+      <div class="wrap">
+        <div class="ben-card rv">
+          <div class="ben-head">
+            <p class="kicker"><span data-i18n="bn.k">Beneficii</span></p>
+            <h2 data-i18n="bn.h">Ce primești ca partener CGA.</h2>
+            <p class="lede" data-i18n="bn.p">Pe scurt, ce găsești la noi. Restul detaliilor ți le spunem la telefon.</p>
+          </div>
+          <ul class="ben-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><h3 data-i18n="bn.1t">Curse prin Europa</h3><p data-i18n="bn.1d">Clienții noștri trimit marfă în 18 țări. Noi găsim comenzile, tu conduci.</p></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.3-2 1.4a12 12 0 0 0 6.2 6.2l1.4-2 4.3 1.4v2.6c0 1.2-1 2.1-2.2 2A16.6 16.6 0 0 1 4.6 5.7c-.1-1.2.8-2.2 2-2.2z"/></svg><h3 data-i18n="bn.2t">Dispecerat 24/7</h3><p data-i18n="bn.2d">Un om de la noi e cu tine pe drum, inclusiv duminica și de sărbători.</p></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="13" rx="2"/><path d="M8 20.5h8M12 17.5v3M7.5 9h9M7.5 12.5h5"/></svg><h3 data-i18n="bn.3t">Portalul CGA</h3><p data-i18n="bn.3d">Comenzile, documentele și facturile tale, într-un singur loc. Intri cu CUI-ul firmei.</p></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z"/><path d="M13.5 3.5v4.5H18M9 12h6M9 15.5h4"/></svg><h3 data-i18n="bn.4t">Contract clar</h3><p data-i18n="bn.4d">Colaborarea pornește cu un contract semnat, trimis pe email.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="echipa" class="sec team">
+      <div class="wrap team-grid">
+        <figure class="team-photo rv">
+          <img srcset="assets/img/dispecerat-900.jpg 900w, assets/img/dispecerat-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 56vw" src="assets/img/dispecerat-1600.jpg" width="1600" height="978" loading="lazy" decoding="async" alt="Claudiu Oprea, fondatorul CGA, la biroul de dispecerat, cu harta Europei pe monitor." data-i18n-alt="tm.alt">
+          <figcaption class="chip-l"><span class="live-dot" aria-hidden="true"></span><span data-i18n="tm.cap">Claudiu Oprea, fondator și CEO</span></figcaption>
+        </figure>
+        <div class="team-copy">
+          <p class="kicker rv"><span data-i18n="tm.k">Echipa</span></p>
+          <h2 class="rv" style="--i:1" data-i18n="tm.h">Oameni reali, la un telefon distanță.</h2>
+          <p class="lede rv" style="--i:2" data-i18n="tm.p">Dispeceratul nostru din București e alături de fiecare cursă. Când suni, îți răspunde cineva care știe unde ești și ce urmează.</p>
+          <a class="faq-call rv" style="--i:3" href="tel:+40799752124"><span class="live-dot" aria-hidden="true"></span><span data-i18n="h.call">Sună: +40 799 752 124</span></a>
+        </div>
+      </div>
+      <div class="wrap">
+        <ul class="faces">
+          <li class="face rv" style="--i:1"><img src="assets/img/echipa-28.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Andreea Bîrgoz</strong><span data-i18n="tm.r1">Director comercial</span></p></li>
+          <li class="face rv" style="--i:2"><img src="assets/img/echipa-29.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Valentin Neacsu</strong><span data-i18n="tm.r2">Manager operațional</span></p></li>
+          <li class="face rv" style="--i:3"><img src="assets/img/echipa-37.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Gabriel Mărăcine</strong><span data-i18n="tm.r2">Manager operațional</span></p></li>
+          <li class="face rv" style="--i:4"><img src="assets/img/echipa-30.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Eugen Pistol</strong><span data-i18n="tm.r3">Specialist operațiuni</span></p></li>
+          <li class="face rv" style="--i:5"><img src="assets/img/echipa-47.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Daniel Popescu</strong><span data-i18n="tm.r3">Specialist operațiuni</span></p></li>
+          <li class="face rv" style="--i:6"><img src="assets/img/echipa-41.jpg" width="350" height="438" loading="lazy" decoding="async" alt=""><p><strong>Alexandru Bîrgoz</strong><span data-i18n="tm.r4">Operațiuni</span></p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="inscriere" class="sec how">
+      <div class="wrap">
+        <p class="kicker rv"><span data-i18n="in.k">Înscriere</span></p>
+        <h2 class="rv" style="--i:1" data-i18n="in.h">Intri în flotă în patru pași.</h2>
+        <div class="route-steps">
+          <div class="road" aria-hidden="true"><span class="road-done"></span><span class="road-car"><svg viewBox="0 0 24 24"><path d="M5.4 4.6c-.9-.5-2 .1-2 1.1v12.6c0 1 1.1 1.6 2 1.1l11-6.3c.9-.5.9-1.7 0-2.2z"/></svg></span></div>
+          <ol class="stops">
+            <li class="rv" style="--i:2"><span class="stop-mark" aria-hidden="true"></span><span class="stop-n">01</span><h3 data-i18n="in.1t">Te înregistrezi</h3><p data-i18n="in.1d">Completezi formularul: firma, CUI-ul, câte dube ai și de ce tip.</p></li>
+            <li class="rv" style="--i:3"><span class="stop-mark" aria-hidden="true"></span><span class="stop-n">02</span><h3 data-i18n="in.2t">Validăm contul</h3><p data-i18n="in.2d">Verificăm informațiile și primești o notificare când contul e activ.</p></li>
+            <li class="rv" style="--i:4"><span class="stop-mark" aria-hidden="true"></span><span class="stop-n">03</span><h3 data-i18n="in.3t">Completăm actele</h3><p data-i18n="in.3d">Un coleg te sună pentru datele firmei și documentație.</p></li>
+            <li class="rv" style="--i:5"><span class="stop-mark" aria-hidden="true"></span><span class="stop-n">04</span><h3 data-i18n="in.4t">Semnăm contractul</h3><p data-i18n="in.4d">Contractul vine pe email și pornim la drum.</p></li>
+          </ol>
+        </div>
+        <div class="how-cta rv" style="--i:3"><a class="btn btn-accent" href="https://cgatrans.com/partnership/carriers_form" data-i18n="in.cta">Formular de înregistrare</a></div>
+      </div>
+    </section>
+
+    <section id="intrebari" class="sec faq">
+      <div class="wrap faq-grid">
+        <div class="faq-head">
+          <p class="kicker rv"><span data-i18n="fq.k">Întrebări</span></p>
+          <h2 class="rv" style="--i:1" data-i18n="fq.h">Ce ne întreabă partenerii.</h2>
+          <a class="faq-call rv" style="--i:2" href="tel:+40799752124"><span class="live-dot" aria-hidden="true"></span><span data-i18n="h.call">Sună: +40 799 752 124</span></a>
+        </div>
+        <div class="qas">
+          <div class="qa rv open" style="--i:1"><h3><button class="q" type="button" id="q1" aria-expanded="true" aria-controls="a1"><span data-i18n="fq.1q">Ce dube acceptați?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a1" role="region" aria-labelledby="q1"><p data-i18n="fq.1a">Dube Caddy de 2 europaleți, dube Sprinter de 5, 6 sau 7 europaleți și prelate de 8 europaleți.</p></div></div>
+          <div class="qa rv" style="--i:2"><h3><button class="q" type="button" id="q2" aria-expanded="false" aria-controls="a2"><span data-i18n="fq.2q">Am nevoie de firmă?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a2" role="region" aria-labelledby="q2" hidden><p data-i18n="fq.2a">Da. Colaborăm cu firme, SRL sau PFA, pe baza CUI-ului. Poți intra cu o singură dubă sau cu mai multe.</p></div></div>
+          <div class="qa rv" style="--i:3"><h3><button class="q" type="button" id="q3" aria-expanded="false" aria-controls="a3"><span data-i18n="fq.3q">Unde sunt cursele?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a3" role="region" aria-labelledby="q3" hidden><p data-i18n="fq.3a">Prin toată Europa. Mergem des în România, Bulgaria, Ungaria, Cehia, Slovacia, Polonia, Germania, Austria, Belgia, Franța, Spania, Portugalia, Italia, Marea Britanie, Suedia, Norvegia, Olanda și Danemarca.</p></div></div>
+          <div class="qa rv" style="--i:4"><h3><button class="q" type="button" id="q4" aria-expanded="false" aria-controls="a4"><span data-i18n="fq.4q">Cum primesc cursele?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a4" role="region" aria-labelledby="q4" hidden><p data-i18n="fq.4a">De la dispeceratul nostru. Comenzile, documentele și facturile le vezi și în portalul CGA, unde intri cu CUI-ul firmei.</p></div></div>
+          <div class="qa rv" style="--i:5"><h3><button class="q" type="button" id="q5" aria-expanded="false" aria-controls="a5"><span data-i18n="fq.5q">Ce documente îmi trebuie?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a5" role="region" aria-labelledby="q5" hidden><p data-i18n="fq.5a">După ce îți validăm contul, un coleg te sună și îți spune exact ce acte trebuie pentru firmă și pentru dube.</p></div></div>
+          <div class="qa rv" style="--i:6"><h3><button class="q" type="button" id="q6" aria-expanded="false" aria-controls="a6"><span data-i18n="fq.6q">Am sprijin pe drum?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a6" role="region" aria-labelledby="q6" hidden><p data-i18n="fq.6a">Da. Dispeceratul nostru răspunde 24/7, inclusiv duminica și de sărbători.</p></div></div>
+          <div class="qa rv" style="--i:7"><h3><button class="q" type="button" id="q7" aria-expanded="false" aria-controls="a7"><span data-i18n="fq.7q">Cum se plătesc cursele?</span><span class="pm" aria-hidden="true"></span></button></h3><div class="a" id="a7" role="region" aria-labelledby="q7" hidden><p data-i18n="fq.7a">Condițiile de colaborare și de plată le discutăm direct cu tine, la telefon, și le trecem în contract.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="sec contact-sec night">
+      <canvas id="night-map" class="night-map" aria-hidden="true"></canvas>
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="kicker rv"><span data-i18n="ct.k">Contact</span></p>
+          <h2 class="rv" style="--i:1" data-i18n="ct.h">Hai să vorbim despre duba ta.</h2>
+          <p class="lede rv" style="--i:2" data-i18n="ct.p">Sună-ne sau scrie-ne. Îți răspundem la orice întrebare despre colaborare.</p>
+          <div class="cta-row rv" style="--i:3">
+            <a class="btn btn-accent" href="https://cgatrans.com/partnership/carriers_form" data-i18n="in.cta">Formular de înregistrare</a>
+            <a class="btn btn-ghost-n" href="https://portal.cgatrans.com/evendor" target="_blank" rel="noopener" data-i18n="cr.b2">Autentificare transportator</a>
+          </div>
+        </div>
+        <div class="contact-card rv" style="--i:2">
+          <dl class="c-rows">
+            <div class="c-row"><dt data-i18n="ct.phone">Telefon</dt><dd><a class="c-big" href="tel:+40799752124">+40 799 752 124</a></dd></div>
+            <div class="c-row"><dt data-i18n="ct.email">Email</dt><dd><a href="mailto:office@cgatrans.com">office@cgatrans.com</a></dd></div>
+            <div class="c-row"><dt data-i18n="ct.addr">Adresă</dt><dd>Strada Crinului, Nr. 90A, Parter, Ap. 2, Sector 1, 012585 București</dd></div>
+            <div class="c-row"><dt data-i18n="ct.hours">Program birou</dt><dd data-i18n="ct.hoursV">Luni–vineri, 09:00–⁠18:00</dd></div>
+            <div class="c-row"><dt data-i18n="ct.disp">Dispecerat</dt><dd><span class="live-dot" aria-hidden="true"></span> 24/7</dd></div>
+          </dl>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/CGATransExperience/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/company/cga-cargo-go-ahead/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M5 3.6a2.3 2.3 0 1 1 0 4.6 2.3 2.3 0 0 1 0-4.6zM3 9.6h4V21H3zM9.6 9.6h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a></li>
+            <li><a href="https://www.youtube.com/@cga-transexperience9665" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/cga_trans" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.2" cy="6.8" r="1.1"/></svg></a></li>
+          </ul>
+          <p class="c-more"><span data-i18n="ct.client">Ești client CGA?</span> <a href="https://portal.cgatrans.com/ecustomer" target="_blank" rel="noopener" data-i18n="ft.p1">Autentificare client</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot night">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="#main" aria-label="CGA Cargo Go Ahead"><img src="assets/img/cga-logo-light.png" alt="" width="106" height="44" loading="lazy"></a>
+      <p data-i18n="ft.tag">Casă de expediții și transport expres în toată Europa, din 2016.</p>
+      <ul class="foot-contact">
+        <li><a href="tel:+40799752124">+40 799 752 124</a></li>
+        <li><a href="mailto:office@cgatrans.com">office@cgatrans.com</a></li>
+        <li>Strada Crinului, Nr. 90A, Parter, Ap. 2, Sector 1, 012585 București</li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <p class="foot-h" data-i18n="ft.partners">Parteneri</p>
+      <ul>
+        <li><a href="https://cgatrans.com/partnership/carriers_form" data-i18n="nav.cta">Devino partener</a></li>
+        <li><a href="https://portal.cgatrans.com/evendor" target="_blank" rel="noopener" data-i18n="cr.b2">Autentificare transportator</a></li>
+        <li><a href="#cum" data-i18n="nav.1">Cum lucrăm</a></li>
+        <li><a href="#intrebari" data-i18n="nav.4">Întrebări</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <p class="foot-h" data-i18n="ft.co">Companie</p>
+      <ul>
+        <li><a href="https://cgatrans.com/about" data-i18n="ft.about">Despre noi</a></li>
+        <li><a href="#echipa" data-i18n="nav.3">Echipa</a></li>
+        <li><a href="#contact" data-i18n="nav.5">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <p class="foot-h" data-i18n="ft.guides">Ghiduri</p>
+      <ul>
+        <li><a href="https://cgatrans.com/news/view/37"><span data-i18n="ft.g1">Ce sunt regulile INCOTERMS</span> <span class="rotag" hidden>RO</span></a></li>
+        <li><a href="https://cgatrans.com/news/view/38"><span data-i18n="ft.g2">Glosar de transport rutier</span> <span class="rotag" hidden>RO</span></a></li>
+        <li><a href="https://cgatrans.com/news/view/39"><span data-i18n="ft.g3">KPI-urile în logistică</span> <span class="rotag" hidden>RO</span></a></li>
+        <li><a href="https://cgatrans.com/news/view/59"><span data-i18n="ft.g4">Limite de viteză pentru camioane</span> <span class="rotag" hidden>RO</span></a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <p class="foot-h" data-i18n="ft.clients">Clienți</p>
+      <ul>
+        <li><a href="https://portal.cgatrans.com/ecustomer" target="_blank" rel="noopener" data-i18n="ft.p1">Autentificare client</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <div class="anpc">
+      <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener"><img src="assets/img/anpc-sal.webp" width="250" height="62" loading="lazy" alt="ANPC: soluționarea alternativă a litigiilor"></a>
+      <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=RO" target="_blank" rel="noopener"><img src="assets/img/anpc-sol.webp" width="250" height="62" loading="lazy" alt="Comisia Europeană: soluționarea online a litigiilor"></a>
+    </div>
+    <div class="legal-row">
+      <p class="copy" data-i18n="ft.copy">© 2026 CGA Trans Experience SRL. Toate drepturile rezervate.</p>
+      <a href="https://cgatrans.com/terms-and-conditions" data-i18n="ft.terms">Termeni și condiții</a>
+      <a href="https://cgatrans.com/privacy-policy" data-i18n="ft.cookies">Politica de cookie-uri</a>
+      <div class="lang lang-night" role="group" aria-label="Limbă" data-i18n-aria="aria.lang">
+        <button type="button" data-lang="ro" aria-pressed="true">RO</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
